@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0%;
+  padding: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .inputContainer {
   display: flex;
   flex-direction: column;
+}
+
+.header input {
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+}
+
+.header button {
+  width: 70px;
+  height: 87px;
+}
+
+.People {
+  width: 100%;
+  display: flex;
   align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.List {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  margin: 15px;
+}
+
+.List .content {
+  flex: 80%;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.List .content span {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border-right: none;
+  background-color: cyan;
+}
+
+.List button {
+  flex: 20%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: green;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
 }
