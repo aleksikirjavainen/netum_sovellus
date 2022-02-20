@@ -13,8 +13,9 @@ body {
 }
 
 .header {
+  flex: 30%;
+  background-color: cyan;
   width: 100%;
-  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,9 +35,12 @@ body {
 .header button {
   width: 70px;
   height: 87px;
+  background-color: grey;
+  color: black
 }
 
 .People {
+  flex: 70%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -44,14 +48,15 @@ body {
   flex-direction: column;
 }
 
-.List {
+.person {
   width: 500px;
   height: 50px;
   display: flex;
+  color: black;
   margin: 15px;
 }
 
-.List .content {
+.person .content {
   flex: 80%;
   height: 100%;
   display: flex;
@@ -59,7 +64,7 @@ body {
   align-items: center;
 }
 
-.List .content span {
+.person .content span {
   display: grid;
   place-items: center;
   border: 1px solid black;
@@ -70,11 +75,11 @@ body {
   background-color: cyan;
 }
 
-.List button {
+.person button {
   flex: 20%;
   height: 100%;
   border: 1px solid black;
-  background-color: green;
-  color: white;
+  background-color: grey;
+  color: black;
   cursor: pointer;
 }
